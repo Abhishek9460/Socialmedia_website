@@ -1,0 +1,66 @@
+.sidebar{
+    flex: 3;
+    height: calc(100vh - 50px);
+    /* 100vh means 100% of the viewport height(full height of the screen),so it will overflow because some height is occupied by navbar,so we are subtracting it. */
+    /* height: calc(100vh-50px) remember to use space before and after the operator like this ,e.g height: calc(100vh - 50px); if its not working.*/
+    overflow-y: scroll;
+    position: sticky;
+    top: 50px;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+
+}
+::-webkit-scrollbar-track{
+background-color: #f1f1f1;
+}
+::-webkit-scrollbar-thumb{
+background-color: rgb(217, 205, 205);
+}
+.sidebarWrapper{
+    padding: 20px;
+}
+.sidebarList{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+}
+.sidebarListItem{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.sidebarIcon{
+    margin-right: 15px;    
+}
+.sidebarButton{
+    width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 500;
+    background-color: rgb(207, 204, 204);
+    border-color: #FFA559;
+}
+.sidebarHr{
+    margin: 20px 0;
+
+}
+.sidebarFriendList{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.sidebarFriend{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; 
+}
+.sidebarFriendImg{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
